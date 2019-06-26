@@ -1,0 +1,85 @@
+
+AbcSize:
+  Enabled: false
+
+AsciiComments:
+  Enabled: false
+
+BlockLength:
+  Enabled: false
+
+ClassAndModuleChildren:
+  Enabled: false
+
+ClassLength:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+  
+MethodLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+  
+MultilineMethodCallIndentation:
+  Enabled: false
+
+Lambda:
+  Enabled: false
+
+Layout/AlignArguments:
+  Enabled: false
+
+LineLength:
+  Enabled: false
+  
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
+
+PerceivedComplexity:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+  
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/MultilineBlockChain:
+  Enabled: false
+
+Style/NumericLiterals:
+  Enabled: false
+
+Style/RescueStandardError:
+  Enabled: false
+  
+Style/SafeNavigation:
+  Enabled: false
+
+Style/TernaryParentheses:
+  Enabled: false
+
+Style/TrailingCommaInHashLiteral:
+  Enabled: false
+
+AllCops:
+  TargetRubyVersion: 2.6
+  Exclude:
+    - Gemfile
+    - Gemfile.lock
+    - Rakefile
+    - bin/*
+    - config.ru
+    - config/**/*
+    - db/**/*
+    - lib/task/*.rake
+    - node_modules/**/*
+    - spec/rails_helper.rb
+    - spec/spec_helper.rb
+    - vendor/bundle/**/*

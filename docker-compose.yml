@@ -1,0 +1,27 @@
+version: '3'
+services:
+  app:
+    build: .
+    depends_on:
+      - db
+    environment:
+      BUNDLE_PATH: /usr/local/bundle
+      DISABLE_SPRING: 1
+      EDITOR: vim
+      TZ: Asia/Tokyo
+    ports:
+      - '3003:3000'
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/root/rails_sample1
+      - bundle:/usr/local/bundle
+  db:
+    image: postgres:11
+    volumes:
+      - data:/var/lib/postgresql/data
+volumes:
+  bundle:
+    driver: local
+  data:
+    driver: local
