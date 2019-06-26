@@ -1,6 +1,10 @@
 {
   "name": "rails_sample1",
   "private": true,
+  "scripts": {
+    "dev": "webpack --progress --mode development --watch",
+    "build": "webpack --progress --mode production"
+  },
   "dependencies": {},
   "devDependencies": {
     "webpack": "^4.35.0",
