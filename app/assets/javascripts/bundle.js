@@ -81,19 +81,31 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./javascripts/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./frontend/javascripts/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./javascripts/index.js":
-/*!******************************!*\
-  !*** ./javascripts/index.js ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./frontend/javascripts/index.js":
+/*!***************************************!*\
+  !*** ./frontend/javascripts/index.js ***!
+  \***************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("\n\n//# sourceURL=webpack:///./javascripts/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _stylesheets_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../stylesheets/style.scss */ \"./frontend/stylesheets/style.scss\");\n/* harmony import */ var _stylesheets_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_stylesheets_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n\nconsole.log('fdsaasdf');\n\n//# sourceURL=webpack:///./frontend/javascripts/index.js?");
+
+/***/ }),
+
+/***/ "./frontend/stylesheets/style.scss":
+/*!*****************************************!*\
+  !*** ./frontend/stylesheets/style.scss ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./frontend/stylesheets/style.scss?");
 
 /***/ })
 
