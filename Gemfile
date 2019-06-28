@@ -13,6 +13,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'mini_magick', '~> 4.8'
 gem 'bootsnap', '>= 1.1.0', require: false
 
+gem 'config'
 gem 'font-awesome-rails'
 
 group :development, :test do
