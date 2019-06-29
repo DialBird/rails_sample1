@@ -1,5 +1,8 @@
 class ApplicationController < ActionController::Base
   before_action :authenticate_user!
+
+  add_flash_types :success, :info, :warning, :danger
+
   helper_method :current_user, :user_signed_in?
 
   def authenticate_user!
