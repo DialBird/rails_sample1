@@ -3,12 +3,12 @@ class Auth0Controller < ApplicationController
 
   def callback
     user = User.from_omniauth(request.env['omniauth.auth'])
-    session[:userinfo] = [user.id, user.uid]
-    redirect_to '/dashboard', notice: 'ログインしました'
+    session[:userinfo] = [user.id, user.email]
+    redirect_to dashboard_path, notice: 'ログインしました'
   end
 
   def failure
-    @error_msg = request.params['message']
+    redirect_to logout_url.to_s, danger: request.params['error_description']
   end
 
   def logout

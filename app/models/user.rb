@@ -27,11 +27,11 @@ class User < ApplicationRecord
 
   class << self
     def from_omniauth(auth)
-      find_or_create_by(uid: auth.uid) do |user|
-        user.email = auth.info.email
+      find_or_create_by(email: auth.info.email) do |user|
         user.name = auth.info.name
         user.profile_image_remote_url = auth.info.image
         user.provider = auth.provider
+        user.uid = auth.uid
       end
     end
   end

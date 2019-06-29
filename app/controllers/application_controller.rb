@@ -24,6 +24,6 @@ class ApplicationController < ActionController::Base
   def user_from_session
     return unless session[:userinfo]
 
-    User.find_by(id: session[:userinfo][0], uid: session[:userinfo][1])
+    User.find_by(id: session[:userinfo][0], email: session[:userinfo][1])
   end
 end
