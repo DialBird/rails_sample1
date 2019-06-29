@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2019_06_29_025651) do
     t.string "email", default: "", null: false
     t.string "provider", default: "", null: false
     t.string "uid", default: "", null: false
+    t.text "profile_image_data"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email"

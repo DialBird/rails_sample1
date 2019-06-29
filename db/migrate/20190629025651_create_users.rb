@@ -5,6 +5,7 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :email, null: false, default: '', index: true
       t.string :provider, null: false, default: ''
       t.string :uid, null: false, default: '', index: true
+      t.text :profile_image_data
 
       t.timestamps
     end
