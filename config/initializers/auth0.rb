@@ -1,9 +1,9 @@
 Rails.application.config.middleware.use OmniAuth::Builder do
   provider(
     :auth0,
-    'CYVj8R33M6O4D2cnd1ueDB6oCC1Id1yP',
+    Settings.auth0.client_id,
     Rails.application.credentials.auth0[:secret],
-    'dialbird.au.auth0.com',
+    Settings.auth0.domain,
     callback_path: '/auth/oauth2/callback',
     authorize_params: {
       scope:  'openid profile email'
