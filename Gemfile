@@ -19,6 +19,7 @@ gem 'active_decorator'
 gem 'active_hash'
 gem 'active_link_to'
 gem 'activerecord-import'
+gem 'aws-sdk-s3'
 gem 'cocoon'
 gem 'config'
 gem 'counter_culture'
@@ -26,6 +27,7 @@ gem 'enum_help'
 gem 'font-awesome-rails'
 gem 'high_voltage'
 gem 'html5_validators'
+gem 'image_processing'
 gem 'meta-tags'
 gem 'omniauth'
 gem 'omniauth-auth0'
@@ -33,6 +35,7 @@ gem 'pagy'
 gem 'rack-attack'
 gem 'render_async'
 gem 'seed-fu'
+gem 'shrine'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -56,6 +59,10 @@ group :development do
   gem 'gem-ctags'
   gem 'migration_comments'
   gem 'rubocop'
+end
+
+group :test do
+  gem 'shrine-memory'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
