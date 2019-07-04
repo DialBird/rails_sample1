@@ -1,6 +1,7 @@
 class CreateProducts < ActiveRecord::Migration[5.2]
   def change
     create_table :products do |t|
+      t.string :stripe_id, null: false, default: ''
       t.string :name, null: false, default: ''
       t.string :type, null: false, default: ''
 
