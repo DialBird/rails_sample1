@@ -21,14 +21,14 @@ class User < ApplicationRecord
   include ProfileImageUploader::Attachment.new(:profile_image)
 
   validates :email, presence: true, uniqueness: true
-  # validates :name, presence: true
+  validates :name, presence: true
   validates :provider, presence: true
   validates :uid, presence: true, uniqueness: true
 
   class << self
     def from_omniauth(auth)
       find_or_create_by(email: auth.info.email) do |user|
-        # user.name = auth.info.name
+        user.name = auth.info.name
         user.profile_image_remote_url = auth.info.image
         user.provider = auth.provider
         user.uid = auth.uid
