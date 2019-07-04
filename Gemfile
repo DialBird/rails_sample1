@@ -36,6 +36,7 @@ gem 'rack-attack'
 gem 'render_async'
 gem 'seed-fu'
 gem 'shrine'
+gem 'stripe'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
